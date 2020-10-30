@@ -67,7 +67,7 @@ module.exports = {
   mode: 'development',
   entry: {
     main: ["@babel/polyfill", './assets/js/index.js'],
-    analitycs: './assets/js/analitycs.js',
+    analitycs: './assets/js/analitycs.ts',
   },
   output: {
     filename: filename("js"),
@@ -197,7 +197,7 @@ module.exports = {
           };
           
          */
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /node_modules/,// говорим бэйбэлу чтобы он не компелировал файлы из папки node_modules
         use: {
           loader: "babel-loader",
@@ -205,7 +205,20 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.ts?$/,
+        exclude: /node_modules/,
+        loader: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              '@babel/preset-env',
+              "@babel/preset-typescript"
+            ]
+          }
+        }
+      },
     ]
   }
 };

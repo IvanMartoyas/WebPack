@@ -27,6 +27,8 @@
     "normalize.css": "^8.0.1",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^4.2.3",
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
@@ -34,9 +36,11 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
     "jquery": "^3.5.1",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "sass": "^1.28.0",
-    "sass-loader": "^10.0.4"
+    "sass-loader": "^10.0.4",
+    "webpack-bundle-analyzer": "^3.9.0"
   }
 }

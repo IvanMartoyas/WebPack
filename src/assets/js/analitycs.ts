@@ -1,7 +1,7 @@
 import * as $ from "jquery"
 import csv from "../csv/book.svg"
 
-var clickCount = 0;
+var clickCount: number = 0;
 
 $(document).on("click", ()=>{
     clickCount +=1;
