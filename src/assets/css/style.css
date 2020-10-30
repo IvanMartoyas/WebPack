@@ -1,0 +1,33 @@
+@import "~normalize.css";
+/* знак тильды значит что нужно вебпаку зайти в node_modules и подключить библиотеку normalize.css*/
+@import "fontstyle.css";
+
+
+body {
+    font-family: "MontserratThin";
+}
+p {
+    color: olivedrab;
+    font-weight: 800;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 800px;
+    min-height: 450px;
+}
+.float__left {
+    float: left;
+    width: 49%;
+    background-color: cornsilk;
+    color: midnightblue; 
+}
+.float {
+    clear: both;
+    width: 100%;
+    margin-right: 2%;
+}
+.float__right {
+    width: 49%;
+    float: right;
+}
